@@ -19,6 +19,8 @@ Through terminal: `composer require --dev fs-ap/laravel-relationship-test:~1.0`
 ## Usage
 
 ```php
+<?php
+
 use Fs\Relationship;
 
 	class AuthorModelTest extends PHPUnit_Framework_TestCase {
@@ -39,6 +41,7 @@ use Fs\Relationship;
 This feature checks bidirectional relation between models through of  ```@return``` annotations on method that defines the relation
 
 ```php
+<?php
 
 	class Author extends Illuminate\Database\Eloquent\Model {
     
@@ -51,6 +54,7 @@ This feature checks bidirectional relation between models through of  ```@return
 And 
 
 ```php
+<?php
 
 	class Comment extends Illuminate\Database\Eloquent\Model {
 
@@ -60,9 +64,6 @@ And
         public function author() { return \$this->belongsTo(Author::class); }
     }
 ```
-self::HAS_MANY => self::BELONGS_TO,
-        self::BELONGS_TO => self::HAS_MANY,
-        self::HAS_ONE => self::HAS_ONE
 
 ## Map of bidirectional check
 
@@ -75,6 +76,8 @@ self::HAS_MANY => self::BELONGS_TO,
 ## Disable bidirectional check
 
 ```php
+<?php
+
 Relationship::check(Author::class, Relationship::HAS_MANY, Comment::class, true);
 ```
 
