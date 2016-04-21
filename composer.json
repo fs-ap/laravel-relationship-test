@@ -1,0 +1,24 @@
+{
+    "name": "fs-ap/laravel-relationship-test",
+    "description": "Enhance the unit test of relationship in model to projects in laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Paulo Silva",
+            "email": "05.paulotarso@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/database": "~5.0",
+        "minime/annotations": "~2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Fs\\": "src/"
+        }
+    }
+}
