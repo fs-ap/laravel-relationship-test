@@ -7,12 +7,7 @@ Enhance the unit test of relationship in model to projects in laravel
 
 ```json
 {
-   "repositories": [
-         {
-         "type": "vcs",
-         "url": "https://gitlab.com/fs-ap/laravel-relationship-test.git"
-         }
-    ],
+  
   "require-dev": {
     "fs-ap/laravel-relationship-test": "~1.0"
   }
