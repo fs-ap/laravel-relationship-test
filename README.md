@@ -9,13 +9,13 @@ Enhance the unit test of relationship in model to projects in laravel
 {
   
   "require-dev": {
-    "fs-ap/laravel-relationship-test": "~1.1"
+    "fs-ap/laravel-relationship-test": "~1.0"
   }
 }
 ```
 Or
 
-Through terminal: `composer require --dev fs-ap/laravel-relationship-test:~1.1`
+Through terminal: `composer require --dev fs-ap/laravel-relationship-test:~1.0`
 
 ## Usage
 
